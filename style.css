@@ -1,0 +1,51 @@
+body{
+    text-align:center;
+    background-color:rgb(223, 249, 251);
+    font-family: 'Segoe UI', sans-serif;
+    color: rgb(0, 0, 0);
+}
+
+h1{
+    font-size:42px;
+    letter-spacing:2px;
+}
+
+h3{
+    font-size:22px;
+    color:#333;
+}
+.box-container{
+    display: flex;
+    justify-content: center;
+}
+.btn{
+    height:150px;
+    width:150px;
+    border-radius:20px;
+    border:none;
+    margin:15px;
+    cursor:pointer;
+    box-shadow:0 6px 12px rgba(0,0,0,0.2);
+    transition:all 0.15s ease;
+}
+
+.btn:hover{
+    transform:scale(1.05);
+}
+
+.green{ background:#2ecc71; }
+.red{ background:#e74c3c; }
+.yellow{ background:#f1c40f; }
+.purple{ background:#9b59b6; }
+
+.flash{
+    background:white !important;
+    transform:scale(1.1);
+}
+
+.userflash{
+    opacity:0.4;
+}
+.game-over{
+    background-color: red;
+}
