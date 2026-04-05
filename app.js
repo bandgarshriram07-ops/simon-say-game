@@ -12,6 +12,7 @@ let gameStartBtn = document.querySelector("#startGame")
 gameStartBtn.addEventListener("click",function(){
     if(gameStart == false){
         console.log("Game is start");
+        gameStartBtn.style.display= "none";
         gameStart = true;
         levelup();
     }
@@ -61,6 +62,7 @@ function checkAnswer(idx){
     }else{
          playSound("wrong");
          h3.innerHTML = ` 😢 Game is over! your level <b>${level}</b> <br> Press again button to start 💥`;
+         gameStartBtn.style.display= "block";
          gameStartBtn.innerText = "Re-start";
          let body = document.querySelector("body");
          body.style.backgroundColor = "red";
