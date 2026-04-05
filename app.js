@@ -61,6 +61,7 @@ function checkAnswer(idx){
     }else{
          playSound("wrong");
          h3.innerHTML = ` 😢 Game is over! your level <b>${level}</b> <br> Press again button to start 💥`;
+         gameStartBtn.innerText = "Re-start";
          let body = document.querySelector("body");
          body.style.backgroundColor = "red";
          setTimeout(()=>{

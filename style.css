@@ -49,10 +49,14 @@ h3{
 .game-over{
     background-color: red;
 }
-/* #startGame{
+#startGame{
     background-color: #2a2df4;
     color: white;
     border: none;
     padding: 8px;
-    width: 3rem;
-} */
+    width: 4rem;
+    border-radius: 6px;
+}
+.footer{
+    margin-top: 2rem;
+}
