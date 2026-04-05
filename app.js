@@ -8,8 +8,8 @@ let level = 0;
 let h3 = document.querySelector("h3");
 
 //-------Game Start -----//
-
-document.addEventListener("keypress",function(){
+let gameStartBtn = document.querySelector("#startGame")
+gameStartBtn.addEventListener("click",function(){
     if(gameStart == false){
         console.log("Game is start");
         gameStart = true;
@@ -60,7 +60,7 @@ function checkAnswer(idx){
         }
     }else{
          playSound("wrong");
-         h3.innerHTML = ` 😢 Game is over! your level <b>${level}</b> <br> Press any key to start 💥`;
+         h3.innerHTML = ` 😢 Game is over! your level <b>${level}</b> <br> Press again button to start 💥`;
          let body = document.querySelector("body");
          body.style.backgroundColor = "red";
          setTimeout(()=>{
